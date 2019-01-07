@@ -1,8 +1,6 @@
 import 'Event.dart';
 class Match{
-  List<String> BlueTeams;
-  List<String> RedTeams;
-  int score;
-  
+  List<Team> blueAlliance;
+  List<Team> redAlliance; 
   Event event; 
 }
