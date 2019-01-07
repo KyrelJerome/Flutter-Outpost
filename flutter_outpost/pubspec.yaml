@@ -66,11 +66,11 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages
-  fonts:
-    - family: Roboto
-      fonts:
-        -asset: assets/fonts/Roboto-Regular.ttf
-        -asset: assets/fonts/Roboto-Bold.ttf
-         style: bold
-        -asset: assets/fonts/Roboto-Italic.ttf
-         style: italic 
+ # fonts:
+  #  - family: Roboto
+   #   fonts:
+   #     -asset: assets/fonts/Roboto-Regular.ttf
+    #    -asset: assets/fonts/Roboto-Bold.ttf
+     #    style: bold
+      #  -asset: assets/fonts/Roboto-Italic.ttf
+      #   style: italic 
