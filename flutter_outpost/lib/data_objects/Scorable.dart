@@ -5,7 +5,12 @@ abstract class Scorable {
   DateTime lastUpdate;
   Scorable fromJson();
   String toJson();
-  bool setValue();
+  bool setData(String value);
+
+  getValue(){
+    return data;
+  }
+  
   void updateTime() {}
 }
 
