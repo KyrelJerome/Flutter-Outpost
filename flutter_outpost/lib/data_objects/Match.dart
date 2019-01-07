@@ -1,11 +1,12 @@
 import 'Event.dart';
 import 'Team.dart';
 import 'TeamReport.dart';
-import 'Team'
+//import 'MatchReport.dart';
 class Match{
   List<Team> blueAlliance;
   List<Team> redAlliance;
   List<TeamReport> blueReports;
+  List<TeamReport> redReports;
 
   Event event; 
 }

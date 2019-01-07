@@ -1,6 +1,4 @@
-import 'Scorable.dart';
-import 'Note.dart';
+import 'Report.dart';
 class TeamReport extends Report{
-  List<Scorable> scorable;
-  Note note;
+  
 }
