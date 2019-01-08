@@ -8,7 +8,7 @@ class Match{
   List<Team> redAlliance;
   List<TeamReport> blueReports;
   List<TeamReport> redReports;
-  MatchReport matchReports;
+  MatchReport matchReport;
   Event event; 
 
 
