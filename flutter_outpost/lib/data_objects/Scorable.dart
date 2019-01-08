@@ -14,4 +14,4 @@ abstract class Scorable {
   void updateTime() {}
 }
 
-enum DataType { STRING, SET, NUMBER, INTEGER, BOOLEAN }
+enum DataType { TIME, INTEGER, BOOLEAN, TEXTUAL, WEIGHTED_ORDINAL, NOMINAL, ORDINAL}
