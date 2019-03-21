@@ -4,7 +4,7 @@ class TeamReport extends Report{
   @override
   bool addScorable(Scorable scoreable) {
     // TODO: implement addScorable
-    return null;
+    return ;
   }
   
 }
