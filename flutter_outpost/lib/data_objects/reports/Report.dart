@@ -1,6 +1,6 @@
-import 'Scorable.dart';
+import 'package:flutter_outpost/data_objects/scorables/Scorable.dart';
 import 'package:flutter_outpost/template_objects/ReportTemplate.dart';
-import 'Note.dart';
+import 'package:flutter_outpost/data_objects/scorables/Note.dart';
 ///The report class ensures we cannot have duplicate
 ///duplicate scorable names in a list of Scorables.
 ///A report encapsulates data for a given match.
