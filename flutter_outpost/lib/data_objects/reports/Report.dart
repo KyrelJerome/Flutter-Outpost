@@ -9,17 +9,26 @@ abstract class Report{
   /// Key is different depending on report type.
   String key;
   String name;
-  List<Scorable> _scorables;
-  List<Note> _notes;
+  List<Scorable> scorables;
+  List<Note> notes;
   bool updateScorable(Scorable scorable){
     int i = 0;
-    while(i < _scorables.length){
-      if(scorable.labelName == _scorables[i].labelName){
-        return _scorables[i].setData(scorable.data);
+    while(i < scorables.length){
+      if(scorable.labelName == scorables[i].labelName){
+        return scorables[i].setData(scorable.data);
       }
     }
     addScorable(scorable);
     return true;
   }
-  bool addScorable(Scorable scoreable);
+    bool addScorable(Scorable scoreable) {
+    scorables.forEach((f) {
+      if (f == scoreable) {
+        return false;
+      }
+    });
+    scorables.add(scoreable);
+    return true;
+  }
+}
 }
