@@ -30,5 +30,5 @@ abstract class Report{
     scorables.add(scoreable);
     return true;
   }
-}
+
 }
