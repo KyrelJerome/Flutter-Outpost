@@ -23,7 +23,7 @@ abstract class Report{
   }
     bool addScorable(Scorable scoreable) {
     scorables.forEach((f) {
-      if (f == scoreable) {
+      if (f.equals(scoreable)) {
         return false;
       }
     });

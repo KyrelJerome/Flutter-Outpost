@@ -7,11 +7,8 @@ abstract class Scorable {
   String toJson();
   bool setData(String value);
 
-  bool operator== (dynamic d){
-      return d.dataType == this.dataType && d.labelName == this.labelName;
-  }
-  getValue(){
-    return data;
+  bool equals(dynamic d){
+      return d is Scorable && d.dataType == this.dataType && d.labelName == this.labelName;
   }
   
   void updateTime() {}
