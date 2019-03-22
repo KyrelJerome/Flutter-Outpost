@@ -1,6 +1,6 @@
 import 'package:flutter_outpost/data_objects/scorables/Scorable.dart';
 import 'Report.dart' show Report;
-
+// For Data
 class MatchReport extends Report{
   @override
   bool addScorable(Scorable scoreable) {

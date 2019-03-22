@@ -2,6 +2,7 @@ abstract class Scorable {
   DataType dataType;
   String data; // In json if data is a list.
   String labelName;
+  bool locked;
   DateTime lastUpdate;
   Scorable fromJson();
   String toJson();
@@ -14,4 +15,4 @@ abstract class Scorable {
   void updateTime() {}
 }
 
-enum DataType { TIME, INTEGER, BOOLEAN, TEXTUAL, WEIGHTED_ORDINAL, NOMINAL, ORDINAL}
+enum DataType { TIME, INTEGER, BOOLEAN, TEXTUAL, WEIGHTED_ORDINAL, NOMINAL, ORDINAL, LINK}
