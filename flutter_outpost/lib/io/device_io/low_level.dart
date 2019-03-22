@@ -13,11 +13,10 @@ _read(String path) async {
   }
 }
  
-_save() async {
+_save(String jsonText, String filePath) async {
   final directory = await getApplicationDocumentsDirectory();
-  final file = File('${directory.path}/my_file.txt');
-  final text = 'Hello World!';
-  await file.writeAsString(text);
+  final file = File('${directory.path}/filePath');
+  await file.writeAsString(jsonText);
   print('saved');
   return 0;
 }
