@@ -1,5 +1,5 @@
 import 'package:flutter_outpost/data_objects/scorables/Scorable.dart';
-import 'Report.dart' show Report;
+import 'package:flutter_outpost/data_objects/reports/Report.dart';
 // For Data
 class MatchReport extends Report{
   @override
