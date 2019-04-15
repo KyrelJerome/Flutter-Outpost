@@ -5,8 +5,8 @@ import 'package:flutter_outpost/data_objects/scorables/Note.dart';
 ///duplicate scorable names in a list of Scorables.
 ///A report encapsulates data for a given match.
 class Report{
-  ReportTemplate template;
-  /// Key is different depending on report type.
+  ReportTemplate template;// Lo
+  /// Key is different depending on report type and data contained.
   String key;
   String name;
   List<Scorable> scorables;
