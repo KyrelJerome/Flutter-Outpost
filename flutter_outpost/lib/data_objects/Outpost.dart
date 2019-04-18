@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter_outpost/template_objects/ReportTemplate.dart';
 
 class Outpost {
