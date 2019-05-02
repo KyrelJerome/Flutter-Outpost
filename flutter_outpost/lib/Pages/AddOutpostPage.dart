@@ -1,3 +1,8 @@
-class AddOutpostPage{
-  
+import 'package:flutter/material.dart';
+
+class AddOutpostPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+  }
 }

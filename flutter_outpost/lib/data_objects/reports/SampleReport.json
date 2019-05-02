@@ -1,0 +1,11 @@
+{
+    "name": "",
+    "key": "key",
+    "template": "template",
+    "outpost":  "outpostHash",
+    "lastUpdate": "DateTimeString",
+    "scorables": {
+      "Label": ["type", "value"]
+    },
+    "notes": ["Note1", "Note2"]
+  }
