@@ -1,4 +1,4 @@
-import 'package:flutter_outpost/data_objects/scorables/Scorable.dart';
+//import 'package:flutter_outpost/data_objects/scorables/Scorable.dart';
 import 'package:flutter_outpost/data_objects/reports/Report.dart';
 // For Data
 class MatchReport extends Report{
