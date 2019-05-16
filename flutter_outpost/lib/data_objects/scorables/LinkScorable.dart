@@ -4,12 +4,11 @@ class LinkScorable extends Scorable{
   
   @override
   Scorable fromJson() {
-    // TODO: implement fromJson
+    //TODO: implement fromJson
     return null;
   }
   //Links by saving designated datapath, This scorable is only held in Templates, and must be filled out as a "complex link", where loops are possible, except for data searching.
 
-  @override
   bool setData(String value) {
     templatePath = value;
     return true;
@@ -18,6 +17,12 @@ class LinkScorable extends Scorable{
   @override
   String toJson() {
     return null;
+  }
+
+  @override
+  DataType type() {
+    // TODO: implement type
+    return DataType.LINK;
   }
     
 }

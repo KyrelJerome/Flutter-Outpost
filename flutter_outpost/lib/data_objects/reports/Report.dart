@@ -4,7 +4,7 @@ import 'package:flutter_outpost/data_objects/scorables/Note.dart';
 
 ///The report class ensures we cannot have duplicate
 ///duplicate scorable names in a list of Scorables.
-///A report encapsulates data for a given match.
+///A report encapsulates data for a given experiment.
 class Report {
   ReportTemplate template; // Lo
   /// Key is different depending on report type and data contained.

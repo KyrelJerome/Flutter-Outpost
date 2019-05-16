@@ -9,6 +9,7 @@ abstract class Scorable {
   bool _updateData(String value);
   bool _updateLabel(String value);
 
+  DataType type();
   void updateData(String value){
     _updateData(value);
     _updateTimeChanged();
@@ -32,5 +33,4 @@ abstract class Scorable {
       lastUpdate = DateTime.now();
   }
 }
-
 enum DataType { TIME, INTEGER, BOOLEAN, TEXTUAL, WEIGHTED_ORDINAL, NOMINAL, ORDINAL, LINK}
