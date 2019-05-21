@@ -6,9 +6,9 @@ abstract class Scorable {
   DateTime lastUpdate;
   Scorable fromJson();
   String toJson();
-  bool _updateData(String value);
-  bool _updateLabel(String value);
-
+  bool updateData(String value);
+  bool updateLabel(String value);
+//TODO: Fix updateData, define a load and save system.  `
   DataType type();
   void updateData(String value){
     _updateData(value);

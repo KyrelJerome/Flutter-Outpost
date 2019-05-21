@@ -24,7 +24,42 @@ class _AddOutpostPageState extends State<AddOutpostPage> {
         items: buildNavigationBarItems(),
         backgroundColor: Colors.green[400],
       ),
-      body: Container(
+      body: PageView(
+              children: buildStages(),
+      ),
+    );
+  }
+  List<Widget> buildStages(){
+     return [buildOutpostForm(),buildReportsForm(),buildOverviewForm()];
+  }
+  List<BottomNavigationBarItem> buildNavigationBarItems() {
+    List<String> templates = ["Outpost", "Reports", "Scorables", "Overview"];
+    List<BottomNavigationBarItem> list = List();
+    for (int i = 0; i < templates.length; i++) {
+      list.add(
+        BottomNavigationBarItem(
+          icon: Text(i.toString()),
+          backgroundColor: Colors.grey[100 * (4 - i)],
+          title: Text(
+            templates[i],
+            style: TextStyle(color: Colors.black),
+          ),
+        ),
+      );
+    }
+    return list;
+  }
+
+  Widget buildReportsForm(){
+    
+  }
+
+  Widget buildOverviewForm(){
+
+  }
+
+  buildOutpostForm() {
+    return Container(
         margin: EdgeInsets.all(8),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -65,29 +100,6 @@ class _AddOutpostPageState extends State<AddOutpostPage> {
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  List<BottomNavigationBarItem> buildNavigationBarItems() {
-    List<String> templates = ["Outpost", "Reports", "Scorables", "Overview"];
-    List<BottomNavigationBarItem> list = List();
-
-    for (int i = 0; i < templates.length; i++) {
-      list.add(
-        BottomNavigationBarItem(
-          icon: Text(i.toString()),
-          backgroundColor: Colors.grey[100 * (4 - i)],
-          title: Text(
-            templates[i],
-            style: TextStyle(color: Colors.black),
-          ),
-        ),
       );
-    }
-    return list;
   }
 }
-
-// Stages:
-// Outpost -> Templates (<-> ScorableTemplates) -> Overview ->complete!
