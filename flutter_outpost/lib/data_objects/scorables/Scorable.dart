@@ -3,6 +3,7 @@ abstract class Scorable {
   String data; // In json if data is a list.
   String labelName;
   bool locked;
+  List valueLimits;
   DateTime lastUpdate;
   Scorable fromJson();
   String toJson();
