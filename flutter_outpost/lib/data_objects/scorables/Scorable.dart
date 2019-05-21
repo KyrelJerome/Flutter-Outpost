@@ -6,16 +6,16 @@ abstract class Scorable {
   DateTime lastUpdate;
   Scorable fromJson();
   String toJson();
-  bool updateData(String value);
-  bool updateLabel(String value);
+  bool typedUpdateData(String value);
+  bool typedUpdateLabel(String value);
 //TODO: Fix updateData, define a load and save system.  `
   DataType type();
   void updateData(String value){
-    _updateData(value);
+    typedUpdateData(value);
     _updateTimeChanged();
   }
   dynamic updateLabel(String value){
-    _updateLabel(value);
+    typedUpdateLabel(value);
     _updateTimeChanged();
   }
   void lock(){
