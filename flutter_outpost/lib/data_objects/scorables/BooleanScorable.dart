@@ -1,4 +1,4 @@
-import 'package:flutter/src/foundation/basic_types.dart';
+
 
 import 'package:flutter/src/widgets/framework.dart';
 
@@ -19,8 +19,7 @@ class BooleanScorable extends Scorable{
 
   @override
   DataType type() {
-    // TODO: implement type
-    return null;
+    return DataType.BOOLEAN;
   }
 
   @override
@@ -36,9 +35,10 @@ class BooleanScorable extends Scorable{
   }
 
   @override
-  Factory<Widget> getScorableDefiner() {
+  Widget getScorableDefiner() {
     // TODO: implement getScorableDefiner
     return null;
   }
+
 
 }

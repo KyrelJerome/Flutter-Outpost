@@ -17,3 +17,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+ThemeData appTheme = ThemeData(
+  brightness: Brightness.dark,
+  primarySwatch: Colors.blueGrey,
+  accentColor: Colors.teal,
+  accentColorBrightness: Brightness.dark,
+  
+);

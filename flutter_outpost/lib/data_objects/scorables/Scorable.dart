@@ -65,7 +65,7 @@ abstract class Scorable {
     );
   }
 
-  Factory<Widget> getScorableDefiner();
+  Widget   getScorableDefiner();
 }
 
 enum DataType {

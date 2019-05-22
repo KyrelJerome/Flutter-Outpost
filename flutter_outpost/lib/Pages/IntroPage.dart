@@ -26,22 +26,22 @@ class IntroPage extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.all(30),
+                  margin: EdgeInsets.symmetric(horizontal: 16, vertical: 32),
                   child: Text(
                     "OUTPOST",
                     style: TextStyle(
                       color: Colors.blueGrey[900],
                       letterSpacing: 4,
                       fontWeight: FontWeight.bold,
-                      fontSize: 48,
+                      fontSize: 56,
                       fontFamily: 'Raleway',
                       fontStyle: FontStyle.italic,
-                      //decoration: TextDecoration.underline,
+                      decoration: TextDecoration.underline,
                     ),
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 4),
+                  margin: EdgeInsets.symmetric(vertical: 8),
                   child: ClipOval(
                     //borderRadius: BorderRadius.circular(100),
                     child: FlatButton(
@@ -60,7 +60,7 @@ class IntroPage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 4),
+                  margin: EdgeInsets.symmetric(vertical: 8),
                   child: ClipOval(
                     //borderRadius: BorderRadius.circular(16),
                     child: FlatButton(

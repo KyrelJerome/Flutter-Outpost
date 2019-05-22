@@ -34,7 +34,7 @@ class IntegerScorable extends Scorable {
   }
 
   @override
-  Factory<Widget> getScorableDefiner() {
+Widget getScorableDefiner() {
     // TODO: implement getScorableDefiner
     return null;
   }

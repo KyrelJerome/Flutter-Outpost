@@ -51,11 +51,11 @@ class _AddOutpostPageState extends State<AddOutpostPage> {
   }
 
   Widget buildReportsForm(){
-    
+    return Container();
   }
 
   Widget buildOverviewForm(){
-
+    return Container();
   }
 
   buildOutpostForm() {
