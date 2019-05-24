@@ -1,6 +1,4 @@
-
-
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/material.dart';
 
 import 'Scorable.dart';
 
@@ -23,15 +21,9 @@ class BooleanScorable extends Scorable{
   }
 
   @override
-  bool typedUpdateData(String value) {
-    // TODO: implement typedUpdateData
-    return null;
-  }
-
-  @override
-  bool typedUpdateLabel(String value) {
-    // TODO: implement typedUpdateLabel
-    return null;
+  bool typedUpdateData(dynamic value) {
+    this.data = data;
+    return true;
   }
 
   @override

@@ -1,18 +1,25 @@
-import 'package:flutter/src/foundation/basic_types.dart';
-
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/material.dart';
 
 import 'Scorable.dart';
-class LinkScorable extends Scorable{
+
+class LinkScorable extends Scorable {
   String templatePath;
-  
+
   @override
   Scorable fromJson() {
     //TODO: implement fromJson
     return null;
   }
-  //Links by saving designated datapath, This scorable is only held in Templates, and must be filled out as a "complex link", where loops are possible, except for data searching.
 
+  //Link Goals: Allow a report to show data generated from data another report.
+  //Goal is to remove the need for data scientists, and allow a lower skill floor for data science.
+  //Link to data, through functions.
+  //Possibly Json functions akin to azure function parameter O.O.S
+  //Links by saving designated datapath, This scorable is only held in Templates, and must be filled out as a "complex link", where loops are possible, except for data searching.
+  //Links define the complete template type, then the data is List [linkType, recognizeString]
+  //LinkTypes are as follows:
+  //Embedded: Points to a general scorable, displaying through a scorabletemplate
+  //
   bool setData(String value) {
     templatePath = value;
     return true;
@@ -25,19 +32,11 @@ class LinkScorable extends Scorable{
 
   @override
   DataType type() {
-    // TODO: implement type
     return DataType.LINK;
   }
 
   @override
-  bool typedUpdateData(String value) {
-    // TODO: implement typedUpdateData
-    return null;
-  }
-
-  @override
-  bool typedUpdateLabel(String value) {
-    // TODO: implement typedUpdateLabel
+  bool typedUpdateData(dynamic value) {
     return null;
   }
 
@@ -46,5 +45,4 @@ class LinkScorable extends Scorable{
     // TODO: implement getScorableDefiner
     return null;
   }
-    
 }

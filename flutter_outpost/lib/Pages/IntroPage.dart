@@ -6,14 +6,22 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /* appBar: AppBar(
+      appBar: AppBar(
         title: Center(
           child: Text(
-            "Outpost",
-            style: Theme.of(context).textTheme.title,
+            "OUTPOST",
+            style: TextStyle(
+              color: Colors.blueGrey[900],
+              letterSpacing: 4,
+              fontWeight: FontWeight.bold,
+              fontSize: 40,
+              fontFamily: 'Raleway',
+              fontStyle: FontStyle.italic,
+              // decoration: TextDecoration.underline,
+            ),
           ),
         ),
-      ),*/
+      ),
       body: Container(
         color: Colors.white,
         child: Container(
@@ -22,57 +30,51 @@ class IntroPage extends StatelessWidget {
           margin: EdgeInsets.all(16),
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 16, vertical: 32),
-                  child: Text(
-                    "OUTPOST",
-                    style: TextStyle(
-                      color: Colors.blueGrey[900],
-                      letterSpacing: 4,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 56,
-                      fontFamily: 'Raleway',
-                      fontStyle: FontStyle.italic,
-                      decoration: TextDecoration.underline,
-                    ),
-                  ),
+                  child: Text("Welcome to Outpost!"),
                 ),
-                Container(
-                  margin: EdgeInsets.symmetric(vertical: 8),
-                  child: ClipOval(
-                    //borderRadius: BorderRadius.circular(100),
-                    child: FlatButton(
-                      padding: EdgeInsets.all(40),
-                      color: Colors.blueGrey[700],
-                      onPressed: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => AddOutpostPage()),
+                Column(
+                  children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 8),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(0),
+                        child: RaisedButton(
+                          padding: EdgeInsets.all(40),
+                          onPressed: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => AddOutpostPage()),
+                              ),
+                          child: Text(
+                            "Host",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 48,
+                            ),
                           ),
-                      child: Text(
-                        "Host",
-                        style: TextStyle(color: Colors.white, fontSize: 48),
+                        ),
                       ),
                     ),
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.symmetric(vertical: 8),
-                  child: ClipOval(
-                    //borderRadius: BorderRadius.circular(16),
-                    child: FlatButton(
-                      padding: EdgeInsets.all(32),
-                      color: Colors.blueGrey[600],
-                      onPressed: () {},
-                      child: Text(
-                        "Join",
-                        style: TextStyle(color: Colors.white, fontSize: 30),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 8),
+                      child: ClipOval(
+                        child: RaisedButton(
+                          padding: EdgeInsets.all(32),
+                          onPressed: () {},
+                          child: Text(
+                            "Join",
+                            style: TextStyle(
+                              fontSize: 30,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
               ],
             ),

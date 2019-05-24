@@ -22,7 +22,7 @@ class _AddOutpostPageState extends State<AddOutpostPage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: buildNavigationBarItems(),
-        backgroundColor: Colors.green[400],
+        //backgroundColor: Colors.green[400],
       ),
       body: PageView(
               children: buildStages(),
@@ -79,7 +79,6 @@ class _AddOutpostPageState extends State<AddOutpostPage> {
                   child: Container(
                     margin: EdgeInsets.only(left: 4),
                     child: TextField(
-                        //decoration: InputDecoration(helperText: "Data"),
                         style: Theme.of(context).textTheme.subtitle),
                   ),
                 ),

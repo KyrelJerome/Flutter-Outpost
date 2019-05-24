@@ -9,9 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Outpost',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
+      theme: appTheme,
       home: IntroPage(),
       debugShowCheckedModeBanner: false,
     );
@@ -19,9 +17,8 @@ class MyApp extends StatelessWidget {
 }
 
 ThemeData appTheme = ThemeData(
-  brightness: Brightness.dark,
+  brightness: Brightness.light,
   primarySwatch: Colors.blueGrey,
-  accentColor: Colors.teal,
-  accentColorBrightness: Brightness.dark,
-  
+  accentColor: Colors.blue[900],
+  accentColorBrightness: Brightness.light,
 );

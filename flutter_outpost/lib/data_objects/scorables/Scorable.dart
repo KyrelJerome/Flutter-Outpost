@@ -1,18 +1,21 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 abstract class Scorable {
   DataType dataType;
-  String data; // In json if data is a list.
+  dynamic data; // In json if data is a list.
   String labelName;
+  String label;
   bool locked;
   List valueBounds;
   DateTime lastUpdate;
   Scorable fromJson();
   String toJson();
-  bool typedUpdateData(String value);
-  bool typedUpdateLabel(String value);
-//TODO: Fix updateData, define a load and save system.  `
+  bool typedUpdateData(dynamic value);
+  bool typedUpdateLabel(String value) {
+    this.label = value;
+    return true;
+  }
+  //TODO: Fix updateData, define a load and save system.  `
   DataType type();
   void updateData(String value) {
     typedUpdateData(value);
