@@ -3,5 +3,6 @@
   "label": "",
   "description": "lorem",
   "GUID" : "",
+  "HostOutpost": "boolean",
   "icon": ""
 }
