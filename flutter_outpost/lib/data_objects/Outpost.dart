@@ -7,13 +7,13 @@ class Outpost {
   String name;// load init
   String label;// 5 character code, loadable
   String description;// 25^5
-  String organisation;
   String deviceUniqueHash;
-  
   List<ReportTemplate> templates;
   Image icon;
   String dataPath;
-  List<String> members;
+  Map<String,String> sfmembers;
   String memberIDs;
-  String host;
+  bool isHost;
+
+  
 }

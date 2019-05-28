@@ -15,6 +15,7 @@ abstract class Scorable {
     this.label = value;
     return true;
   }
+
   //TODO: Fix updateData, define a load and save system.  `
   DataType type();
   void updateData(String value) {

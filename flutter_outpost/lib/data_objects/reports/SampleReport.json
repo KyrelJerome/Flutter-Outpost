@@ -4,8 +4,6 @@
   "template": "templateID",
   "outpost": "outpostHash",
   "lastUpdate": "DateTimeString",
-  "scorables": {
-    "Label": ["type", "value"]
-  },
+  "scorables": [{ "label": "", "value": "i" }, { "label": "", "value": "1312414" }],
   "notes": ["Note1", "Note2"]
 }
