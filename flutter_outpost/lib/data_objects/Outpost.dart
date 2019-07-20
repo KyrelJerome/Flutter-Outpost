@@ -20,6 +20,7 @@ class Outpost {
   bool isHost;
 
   Map<String,dynamic> toJson(){
+    if(isHost){
     return     {
       'name': name,
       'label': label,
@@ -30,8 +31,10 @@ class Outpost {
       'dataPath': dataPath,
       'memberRoles': memberRoles,
       'members': members,
-      'isHost':  isHost,
+      'isHost': isHost,  
     };
+    }
+
   }
 
   Outpost(Map<String, dynamic> map){
@@ -42,7 +45,7 @@ class Outpost {
     label = map['label'];
     deviceUniqueHash = map['deviceUniqueHash'];
     templateLabels = map['deviceUniqueHash'];
-
+    isHost = 
   }
 
   Outpost fromJson(String json){
