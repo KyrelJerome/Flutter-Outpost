@@ -8,8 +8,8 @@ abstract class Scorable {
   bool locked;
   List valueBounds;
   DateTime lastUpdate;
-  Scorable fromJson();
-  String toJson();
+  Scorable fromJson(String json);
+  Map<String,dynamic> toJson();
   bool typedUpdateData(dynamic value);
   bool typedUpdateLabel(String value) {
     this.label = value;

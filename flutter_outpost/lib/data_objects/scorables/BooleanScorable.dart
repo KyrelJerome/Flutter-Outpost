@@ -4,15 +4,22 @@ import 'Scorable.dart';
 
 class BooleanScorable extends Scorable{
   @override
-  Scorable fromJson() {
-    // TODO: implement fromJson
-    return null;
+  Scorable fromJson(String json) {
+    
+    return null; 
   }
 
   @override
-  String toJson() {
-    // TODO: implement toJson
-    return null;
+  Map<String,dynamic> toJson() {
+    
+    return {
+      'dataType':dataType,
+      'labelName': labelName,
+      'data': data,
+      'label': label,
+      'locked': locked,
+      'DateTime': lastUpdate,
+    };
   }
 
   @override
@@ -28,9 +35,7 @@ class BooleanScorable extends Scorable{
 
   @override
   Widget getScorableDefiner() {
-    // TODO: implement getScorableDefiner
+    // TODO: implement getScor  ableDefiner
     return null;
   }
-
-
 }

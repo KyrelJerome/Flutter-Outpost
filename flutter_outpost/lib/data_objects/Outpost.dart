@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter_outpost/template_objects/ReportTemplate.dart';
 import 'dart:ui';
 
@@ -10,10 +12,33 @@ class Outpost {
   String deviceUniqueHash;
   List<ReportTemplate> templates;
   Image icon;
+  String iconPath;
   String dataPath;
-  Map<String,String> sfmembers;
-  String memberIDs;
+  Map<String,String> memberRoles;
+  List<String> members;
   bool isHost;
 
-  
+  Map<String,dynamic> toJson(){
+    return     {
+      'name': name,
+      'label': label,
+      'description': description,
+      'deviceUniqueHash': deviceUniqueHash,
+      'templates': templates,
+      'iconPath': iconPath,
+      'dataPath': dataPath,
+      'memberRoles': memberRoles,
+      'members': members,
+      'isHost':  isHost,
+    };
+  }
+
+  Outpost (Map<String, dynamic> map){
+
+  }
+
+  Outpost fromJson(String json){
+    Map<String,dynamic> decoded = jsonDecode(json);
+    return Outpost(decoded);
+  }
 }
