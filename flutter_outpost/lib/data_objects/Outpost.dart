@@ -10,6 +10,7 @@ class Outpost {
   String label;// 5 character code, loadable
   String description;// 25^5
   String deviceUniqueHash;
+  List<String> templateLabels;
   List<ReportTemplate> templates;
   Image icon;
   String iconPath;
@@ -33,7 +34,14 @@ class Outpost {
     };
   }
 
-  Outpost (Map<String, dynamic> map){
+  Outpost(Map<String, dynamic> map){
+    iconPath = map['iconPath'];
+    dataPath = map['dataPath'];
+    members = map['members'];
+    name = map['name'];
+    label = map['label'];
+    deviceUniqueHash = map['deviceUniqueHash'];
+    templateLabels = map['deviceUniqueHash'];
 
   }
 

@@ -35,7 +35,7 @@ class BooleanScorable extends Scorable{
 
   @override
   Widget getScorableDefiner() {
-    // TODO: implement getScor  ableDefiner
+    // TODO: implement getScorableDefiner
     return null;
   }
 }
