@@ -1,4 +1,4 @@
-# Project Plan
+# Project Roadmap
 
 ## Project Description
 Flutter Outpost is a data collection tool designed for large groups of people to collect data in an organized, streamlined manner through templated data and formatted by a central organization. 
@@ -31,4 +31,5 @@ where outposts operate independently from all other outposts, and invite keys ar
 ### Phase Five Outline (Clean up)
 
 
-## NOTE, ALL PHASES ARE SUBJECT TO CHANGE THROUGH SCRUM DEVELOPMENT PRINCIPLES
+## Disclaimer
+Project Roadmap is subject to change. Currently implemented features may become unsupported.
